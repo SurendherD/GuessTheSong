@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessTheSong</title>
+    <link href="/index/index.css" rel="stylesheet">
+</head>
+<body>
+    <audio loop autoplay hidden id="instr">
+        <source src="" type="audio/mp3">
+    </audio>
+    <p id="htp">How To Play ?</p>
+    <div class="box">
+        <p>Enter Players Name and Choose Avator</p>
+        <p>Click on Start Button</p>
+        <p>Guess the DirectorName/MovieName/Actor/Actress</p>
+        <p>Guess the Answer under 30 Seconds </p>
+        <p>Use Stop Button to stop Game</p>
+        <p>Check Win or Loose</p>
+        <p>Restart the Game</p>
+    </div>
+        <p id="cont" onclick="audi.play()">Continue</p>
+</body>
+<script>
+    const audi=new Audio();
+    audi.src="../music/game-click.wav";
+
+var continuebtn=document.getElementById("cont");
+var audio=document.getElementById("instr");
+continuebtn.addEventListener("click",()=>{
+    location.href="/index/index.html";
+   });
+</script>
+</html>

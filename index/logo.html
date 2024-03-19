@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessTheSong</title>
+    <link href="index.css", rel="stylesheet">
+</head>
+<body id="bdy">
+    <audio autoplay loop hidden id="aud">
+        <source src="../music/startmusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <p id="logo">Lets Play A Game</p>
+    <div>
+        <img src="play.png" id="logoimg" onclick="audio.play()">
+    </div>
+</body>
+<script>
+    const audio=new Audio();
+    audio.src="../music/game-click.wav"
+    var aud=document.getElementById("aud");
+    var bdy=document.getElementById("bdy");
+    bdy.addEventListener("mouseover",()=>{aud.play()});
+    document.getElementById("logoimg").addEventListener("click",()=>{location.href="/index/instructions.html"})
+</script>
+</html>

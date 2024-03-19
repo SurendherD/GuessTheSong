@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+  
+
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #5F9EA0;
+    font-family: "Kode Mono", monospace;
+    color: white;
+}
+
+.timerBoard{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 2%;
+}
+#timer{
+    border: 5px solid white;
+    font-size: 80pt;
+    text-align: center;
+}
+
+.question{
+    text-align: center;
+    font-size: 35pt;
+    justify-content: center;
+
+}
+h1{
+    margin-bottom: 50px;
+}
+#question-text{
+    font-size: 50pt;
+}
+.questionBoard{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: 250px 250px;
+    grid-gap: 50px;
+    font-size: 30pt;
+    place-content: center;
+}
+
+.questionBoard > div{
+    border: 5px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+}
+#slogan-text{
+    font-size: 30pt;
+    border-radius: 18px;
+    text-align: center;
+    margin-top: 1%;
+}
+.profiles{
+    display: flex;
+    gap: 450px;
+    place-content: center;
+}
+
+.startstop-btn{
+    font-size: 50pt;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#start-btn,#stop-btn{
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+#player1img,#player2img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 10px solid white;
+}
+
+#player1Name,#player2Name{
+    text-align: center;
+    font-size: 30pt;
+}
+
+@media screen and (max-width:991px) {
+    .profiles{
+        gap: 180px;
+    }
+    #player1img,#player2img{
+        width: 180px;
+        height: 180px;
+    }
+    #timer{
+        font-size: 60pt;
+    }
+    .question{
+        margin-bottom: 5%;
+    }
+    #question-text{
+        font-size: 30pt;
+    }
+    .questionBoard{
+        font-size: 20pt;
+    }
+    .startstop-btn{
+        font-size: 25pt;
+    }
+    #slogan-text{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #timer{
+        font-size: 50pt;
+    }
+    .profiles{
+        gap: 100px;
+    }
+    .questionBoard{
+        font-size: 14pt;
+    }
+    #slogan-text{
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-width:479px) {
+    #timer{
+        font-size: 35pt;
+        margin-bottom: 2%;
+    }
+    .profiles{
+        gap: 40px;
+    }
+    #player1img,#player2img{
+        width: 120px;
+        height: 120px;
+    }
+    #question-text{
+        font-size: 18pt;
+        margin-bottom: 2%;
+    }
+    .questionBoard{
+        margin: 2%;
+    }
+    #slogan-text{
+        font-size: 12pt;
+    }
+}

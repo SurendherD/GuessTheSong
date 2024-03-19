@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+  
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #5F9EA0;
+    font-family: "Kode Mono", monospace;
+    color: white;
+}
+
+.scoreBoard{
+    font-size: 10pc;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    place-content: center;
+}
+
+#name{
+    font-size: 10pc;
+    text-align: center;
+}
+
+#restartbtn{
+    display: inline-block;
+    font-size: 5pc;
+    text-align: center;
+    cursor: pointer;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 40%;
+    background-color: #964b00;;
+}
+#image{
+    width: 100%;
+}
+@media screen and (max-width:991px) {
+    .scoreBoard{
+        margin-top: 2%;
+    }
+    #image{
+        width: 100%;
+    }
+    #restartbtn{
+        margin-left: 40%;
+        font-size: 2pc;
+    }
+    #name{
+        font-size: 3pc;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #name{
+        font-size: 2pc;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .scoreBoard{
+        margin-top: 2%;
+        font-size: 2pc;
+    }
+    #restartbtn{
+        font-size: 1pc;
+    }
+    #name{
+        font-size: 1pc;
+    }
+}

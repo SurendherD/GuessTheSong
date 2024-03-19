@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessTheSong</title>
+    <link rel="stylesheet" href="/game/game.css">
+</head>
+<body>
+
+    <audio src="" type="audio/mp3" controls loop autoplay  hidden id="audioTag">
+    </audio>
+
+    <section class="timerBoard">
+        <span id="timer">30</span>
+    </section>
+    <div class="question">
+        <h1 id="question-text"></h1>
+     <section class="questionBoard">
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+     </section>
+    </div>
+
+    <section class="profileBoard">
+        <div class="profiles">
+
+            <div class="player1">
+                <img src="" id="player1img">
+                <h2 id="player1Name"></h2>
+            </div>
+
+            <div class="startstop-btn">
+                <div id="start-btn">START</div>
+                <div id="stop-btn">STOP</div>
+            </div>
+
+            <div class="player2">
+                <img src="" id="player2img">
+                <h2 id="player2Name"></h2>
+            </div>
+        </div>
+    </section>
+
+    <div id="slogan-text">WELCOME</div>
+
+
+<script src="game.js"></script>
+<script src="playlist.js"></script>
+</body>
+</html>

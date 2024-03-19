@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessTheSong</title>
+    <link href="/index/index.css" rel="stylesheet">
+</head>
+<body>
+    <audio controls loop autoplay hidden>
+        <source src="../music/indexmusic.mp3" type="audio/mpeg">
+    </audio>
+    <h1 id="heading">GUESS THE SONG</h1>
+ <div class="container">
+    <section class="player1">
+        <div class="playerprofile">
+            <img src="avatorAssets/10.png" id="profile1">
+            <img src="avatorAssets/refresh.png" class="reload-profile1">
+        </div>
+
+        <div>
+            <input type="text" id="in-put1" placeholder="Enter Your Name">
+        </div>
+    </section>
+
+    <section class="player2">
+        <div class="playerprofile">
+            <img src="avatorAssets/1.png" id="profile2">
+            <img src="avatorAssets/refresh.png" class="reload-profile2">
+        </div>
+
+        <div>
+            <input type="text" id="in-put2" placeholder="Enter Your Name">
+        </div>
+    </section>
+ </div>
+    <section class="startgame">
+        <h1 id="start-btn">Start Guessing The Song</h1>
+    </section>
+<script src="/index/index.js"></script>
+</body>
+</html>
