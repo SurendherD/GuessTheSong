@@ -192,7 +192,7 @@ function wrong(){
 
 function playSong(){
     songNum=Math.floor(Math.random()*67 + 1);
-    audio.src=`playlist/song${songNum}.mp3`;
+    audio.src=`./playlist/song${songNum}.mp3`;
     audio.load()
     audio.play();
 }

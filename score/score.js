@@ -20,15 +20,15 @@ restartbtn.addEventListener("click",()=>{
 if(player1score>player2score){
     winner.innerHTML=`${player1Name} Won the Game`;
     audio.src="../music/win.mp3";
-    img.src="winner-2.jpg";
+    img.src="./winner-2.jpg";
 }
 else if(player1score<player2score){
     winner.innerHTML=`${player2Name} Won the Game`;
     audio.src="../music/win.mp3";
-    img.src="winner-3.jpg";
+    img.src="./winner-3.jpg";
 }
 else{
     winner.innerHTML='Game Draw !';
     audio.src="../music/draw.mp3";
-    img.src="winner-1.jpg";
+    img.src="./winner-1.jpg";
 }
